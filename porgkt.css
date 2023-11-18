@@ -1,21 +1,17 @@
 *{
-    margin:39px;
+    margin:29px;
     padding: 0px;
-}
-p.example{
-    border: 3px solid;
-    border-color: brown;
 }
 
     
 
 
 #imge-equalizer{
-   
+    
     width: 189px;
     height: 288px;
     display:inline-block;
-    margin:10px;
+    margin:15px;
     padding:0%;
     
 
@@ -25,7 +21,7 @@ p.example{
     width: 189px;
     height: 288px;
     display:inline-block;
-    margin:10px;
+    margin:15px;
     padding: 0%;
 }
 
@@ -33,30 +29,25 @@ p.example{
     width:189px;
     height:288px;
     display:inline-block;
-    margin: 10px;
+    margin:15px;
     padding: 0%;
 }
 #imge-saw{
     width:189px;
     height:288px;
     display:inline-block;
-    margin:10px;
+    margin:15px;
     padding: 0%;
 }
 #imge-mis{
     width:189px;
     height:288px;
     display:inline-block;
-    margin: 10px;
+    margin: 15px;
     padding: 0%;
 }
-#imge-wi{
-    width:189px;
-    height:288px;
-    display:inline-block;
-    margin: 10px;
-    padding: 0%;
-}
+
+
 #imge-ah{
     width:189px;
     height:288px;
@@ -207,15 +198,19 @@ p.example{
 }
 
 
+
+
+
+
 .child{
     
-    display:inline-block ;
+    display: inline-block;
     width: 200px;
     height:590;
     border:5px solid #d42e0d;
     background-color: rgb(5, 25, 33);
     font-size: 14px;
-    margin: 10px;
+   margin: 10px;
 }
 .hh{
     
@@ -224,16 +219,16 @@ p.example{
     height: 650px;
     border: 5px solid #ce1818;
     background-color: rgb(48, 57, 53);
-    margin:40px;
+   margin: 10px;
 }
 .ss{
-    display:inline-block ;
+    display: inline-block;
     width:250px;
     height:655px;
     border:5px solid #da1818;
     background-color: rgb(48, 57, 53);
     font-size: 14px;
-    margin: 40px;
+    margin: 10px;
 }
 .kk{
     display:inline-block ;
@@ -242,47 +237,47 @@ p.example{
     border:5px solid #d31717;
     background-color: rgb(48, 57, 53);
     font-size: 14px;
-    margin: 40px;
+    margin: 0px;
 }
 .a{
-    display: inline-block;
+    display: inline-flex;
     width: 210px;
     height: 210px;
     background-color: rgb(207, 223, 192);
     border-radius:50% ;
-    margin: 15px;
+    margin: 5px;
 }
 .b{
-    display:inline-block ;
+    display:inline-flex ;
     width: 210px;
     height: 210px;
     background-color: rgb(207, 223, 192);
     border-radius:50% ;
-   margin: 15px;
+   margin:5px;
 }
 .c{
-    display: inline-block;
+    display:inline-flex;
     width: 210px;
     height: 210px;
     background-color: rgb(207, 223, 192);
     border-radius:50% ;
-   margin: 15px;
+   margin: 5px;
 }
 .d{
-    display: inline-block;
+    display: inline-flex;
     width: 210px;
     height: 210px;
     background-color: rgb(207, 233, 192);
     border-radius:50% ;
-   margin:15px;
+   margin:5px;
 }
 .e{
-    display: inline-block;
+    display: inline-flex;
     width: 210px;
     height: 210px;
     background-color: rgb(207, 223, 192);
     border-radius:50% ;
-   margin: 15px;
+   margin: 5px;
 }
 
 
