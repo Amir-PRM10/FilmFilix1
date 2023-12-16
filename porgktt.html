@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Filmfilix</title>
     <style type="text/css">
+       .gallery{
+            --g:8px;
+            --s:400px;
+            display: grid;
+            border-radius: 50%;
+        }
+        .gallery > img{
+            grid-area: 1/1;
+            width: 400px;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 50%;
+            transform: translate(var(--_x,0),var(--_y,0));
+            cursor: pointer;
+            z-index: 0;
+            transition: .3s, z-index 0s .3s;
+        }
+        .gallery img:hover {
+            --_i: 1;
+            z-index: 1;
+            transition: transform .2s, clip-path .3s .2s, z-index 0s;
+        }
+        .gallery:hover img {
+            transform: translate(0,0);
+        }
+        .gallery > img:nth-child(1){
+            clip-path: polygon(50% 50%,calc(50%*var(--_i,0))
+            calc(120%*var(--_i,0)),0
+            calc(100%*var(--_i,0)),0 0 , 100% 0 ,100%
+            calc(100%*var(--_i,0)),calc(100% - 50%*var(--_i,0)) calc(120%*var(--_i,0)));
+            --_y:calc(-1*var(--g));
+        }
+        .gallery > img:nth-child(2) {
+            clip-path: polygon(50% 50%,calc(100% - 120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100% - 100%*var(--_i,0)) 0,100% 0,100% 100%,calc(100% - 100%*var(--_i,0)) 100%,calc(100% - 120%*var(--_i,0)) calc(100% - 50%*var(--_i,0)));
+            --_x: var(--g)
+        }
+        .gallery > img:nth-child(3) {
+            clip-path: polygon(50% 50%,calc(100% - 50%*var(--_i,0)) calc(100% - 120%*var(--_i,0)),100% calc(100% - 120%*var(--_i,0)),100% 100%,0 100%,0 calc(100% - 100%*var(--_i,0)),calc(50%*var(--_i,0)) calc(100% - 120%*var(--_i,0)));
+            --_y: var(--g)
+        }
+        .gallery > img:nth-child(4) {
+            clip-path: polygon(50% 50%,calc(120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100%*var(--_i,0)) 0,0 0,0 100%,calc(100%*var(--_i,0)) 100%,calc(120%*var(--_i,0)) calc(100% - 50%*var(--_i,0)));
+            --_x: calc(-1*var(--g))
+        }
        
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-content: center;
+            background: #282a36;
+        
+        }
+
 
     </style>
 </head>
@@ -15,32 +68,49 @@
         <nav>
             <ul>
                 <li><a href="porgktt.html">صفحه اصلی</a></li>
-                <li><a href="darbare ma.html">درباره ما</a></li>
-                <li><a href="caalme.html">تماس با ما</a></li>
+                <li><a href="Contact Us/index.html">تماس با ما</a></li>
                 <li><a href="Login/LOG.htm"> ثبت نام</a> </li>
             </ul>
         </nav>
-       
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
     <link rel="stylesheet" href="porgkt.css">
 </header>
 <body style="background-color: rgb(0, 0, 0);">
     
+<div class="container">
+    <div class="row">
+        <div class="bb col">
+            <a href="imge.html/equalizer/equalizer.html">
+                <img  " id="imge-equalizer" src="imag/1.jpg" alt=""    > 
+            </a>
+           <a href="imge.html/Expen/Expend4bles.html">
+                <img  id="imge-Expend4bles" src="imag/2.jpg" alt=""> 
+           </a>
+           <a href="imge.html/loki/loki.html">
+                <img id="imge-loki" src="imag/3.jpg"alt="">
+           </a>
+            <a href="imge.html/saw/saw.html">
+                <img  id = "imge-saw" src="imag/saw-x-28353-210x315.jpg" alt="">
+            </a>
+            <a href="imge.html/mis/mis.html">
+                <img id = "imge-mis" src="imag/mission-impossible-dead-reckoning-part-one-27936-210x315.jpg" alt="">
+            </a>
+           
+            
+           </div>
+            
+    </div>
+</div>
 
-   <div class="bb">
-    <img  " id="imge-equalizer" src="filmfilix/imge/1.jpg" alt=""    > 
-    <img  id="imge-Expend4bles" src="filmfilix/imge/2.jpg" alt=""> 
-     <img id="imge-loki" src="filmfilix/3.jpg" alt="">
-    <img  id = "imge-saw" src="imag/saw-x-28353-210x315.jpg" alt="">
-    <img id = "imge-mis" src="imag/mission-impossible-dead-reckoning-part-one-27936-210x315.jpg" alt="">
-    
-   </div>
+   
     
 
     <center>
         <p style="background-color: rgb(224, 65, 33);" >
            
                 <<<<< فیلم فلیکس>>>>>
-            
+        
            
         </p>
     </center> 
@@ -48,89 +118,58 @@
     
     
     <div class="parent">
-        <div class="child" style="color: aliceblue;">
-            <img id="imge-br" src="imag/بارگیری.jpg" alt="">                      
-        برکینگ بد
-        <br>
-        <img  id= "imge-ga"src="imag/gaim of thrones.jpg" alt="">
-        گیم اف ترونز
-        <br>
-        <img id= "imge-wal"src="imag/walking dead.jpg" alt="">
-        مردگان متحرک
-        <br>
-        <img  id="imge-kar"src="imag/true detective.jpg" alt="">
-         .  .  . کاراگاهان حقیقی       
-        <br>
-        <img id="imge-boys"src="imag/the-boys.jpg" alt="">
-        پسران
-        <br>
-        <img  id="imge-broth" src="imag/Band-of-Brothers.jpg" alt="">
-        جوخه برادران
-        <br>
-        <img id="imge-che"src="imag/chernobyl.jpg" alt="">
-        چرنوبیل
-        <br>
-        <img id="imge-sopr" src="imag/soperanos_.jpg" alt="">
-        سوپرانو
-        <br>
+        <div class="jj">
+
+      
+         <div class="child" style="color: aliceblue;">
+         <a href="serial/berking/">
+         <img id="imge-br" src="imag/بارگیری.jpg" alt="">                      
+         برکینگ بد
+            </a>
+         <br>
+         <a href="serial/gime/gimeof.html">
+         <img  id= "imge-ga"src="imag/gaim of thrones.jpg" alt="">
+         گیم اف ترونز
+         </a>
+         <br>
+         <a href="">
+         <img id= "imge-wal"src="imag/walking dead.jpg" alt="">
+         مردگان متحرک
+         </a>
+         
+         <br>
+         <img  id="imge-kar"src="imag/true detective.jpg" alt="">
+          .  .  . کاراگاهان حقیقی       
+         <br>
+         <img id="imge-boys"src="imag/the-boys.jpg" alt="">
+         پسران
+         <br>
+         <img  id="imge-broth" src="imag/Band-of-Brothers.jpg" alt="">
+         جوخه برادران
+         <br>
+         <img id="imge-che"src="imag/chernobyl.jpg" alt="">
+            چرنوبیل
+         <br>
+         <img id="imge-sopr" src="imag/soperanos_.jpg" alt="">
+         سوپرانو
+          <br>
+         </div>
+
+         <div class="gallery">
+            <img src="imag/gaim of thrones.jpg" alt="" >
+           <img src="imag/pulp_fiction_joshua_budich.jpg">
+           <img src="imag/dark nknight.jpg" alt="">
+           <img src="imag/Band-of-Brothers.jpg" alt="">
+        </div>
+        <div class="gallery">
+            <img src="imag/bourne.jpg" alt="" >
+           <img src="imag/the-boys.jpg">
+           <img src="imag/John-Wick-Chapter-4-1.webp" alt="">
+           <img src="imag/Interstellar_film_poster.jpg" alt="">
         </div>
 
-        <div class="hh">
-        <p dir="rtl" >
-            <p style="font-size: 40px;">
-                ابر  قهرمان
-            </p>
-            
-            <img id="imge-nnnn"src="imag/Interstellar_film_poster.jpg" alt="">
-            میان ستاره ای
-            <br>
-            <img  id="imge-dark"src="imag/dark nknight.jpg" alt="">
-            شوالیه تاریکی
-            <br>
-            <img id="imge-avengers"src="imag/avengers.jpeg" alt="">
-            انتقام جویان 
-            <br>
-            
 
-        </p>
-        </div>
-        <div class="ss">
-            <P>
-                <p dir="rtl " style="font-size: 40px;">
-                    اکشن   
-                   </p>
-                   <img id="imge-jan" src="imag/John-Wick-Chapter-4-1.webp" alt="">
-                   جان ویک
-                   <br>
-                   <img id="imge-miss" src="imag/mission-impossible.jpg" alt="">
-                   ماموریت غیر ممکن
-                   <br>
-                   <img id="imge-bourne"src="imag/bourne.jpg" alt="">
-                   اولتیماتوم بورن
-                   <br>
-            </P>
-
-           
-        </div>
-
-        <div class="kk">
-            <p>
-                <p style="font-size: 40px;">
-                    جنایی
-                   </p>
-                   <img  id="imge-se7en"src="imag/se7en_.jpg" alt="">
-                   هفت
-                   <br>
-                   <img id="imge-pulp"src="imag/pulp_fiction_joshua_budich.jpg" alt="">
-                   داستان عامه پسند
-                   <br>
-                   <img id="imge-departed"src="imag/the-departed-2006.jpg" alt="">
-                   رفتگان
-                   <br>
-                   
-            </p>
-           
-        </div>
+         </div>
         <hr>
         <center>
             <p style="background-color:rgb(223, 80, 33)">

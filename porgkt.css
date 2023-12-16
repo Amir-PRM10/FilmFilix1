@@ -11,7 +11,7 @@
     width: 189px;
     height: 288px;
     display:inline-block;
-    margin:15px;
+    margin:0px;
     padding:0%;
     
 
@@ -21,7 +21,7 @@
     width: 189px;
     height: 288px;
     display:inline-block;
-    margin:15px;
+    margin:0px;
     padding: 0%;
 }
 
@@ -29,21 +29,21 @@
     width:189px;
     height:288px;
     display:inline-block;
-    margin:15px;
+    margin:0px;
     padding: 0%;
 }
 #imge-saw{
     width:189px;
     height:288px;
     display:inline-block;
-    margin:15px;
+    margin:0px;
     padding: 0%;
 }
 #imge-mis{
     width:189px;
     height:288px;
     display:inline-block;
-    margin: 15px;
+    margin: 0px;
     padding: 0%;
 }
 
@@ -175,6 +175,7 @@
 #imge-leonardo{
     width: 135px;
     height: 135px;
+   
 }
 #imge-mat{
     width: 135px;
@@ -182,7 +183,7 @@
 }
 #imge-jison{
     width: 140px;
-    height: 135px;  
+    height: 135px; 
 }
 #imge-silvester{
     width: 140px;
@@ -195,6 +196,13 @@
 #imge-2222{
     width: 50px;
     height: 50px;
+}
+.bb{
+    display:flex;
+}
+
+.jj{
+    display: flex;
 }
 
 
